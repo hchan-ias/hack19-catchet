@@ -2,7 +2,7 @@ apiVersion: skaffold/v1beta2
 kind: Config
 build:
   artifacts:
-  - image: hchan@integralads.com/hack19-catchet
+  - image: hchan-ias/hack19-catchet
     context: .
     docker: {}
   tagPolicy:

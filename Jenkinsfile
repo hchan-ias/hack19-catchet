@@ -3,10 +3,10 @@ pipeline {
     label "jenkins-jx-base"
   }
   environment {
-    ORG = 'hchan-integralads-com'
+    ORG = 'hchan-ias'
     APP_NAME = 'hack19-catchet'
     CHARTMUSEUM_CREDS = credentials('jenkins-x-chartmuseum')
-    DOCKER_REGISTRY_ORG = 'hchan@integralads.com'
+    DOCKER_REGISTRY_ORG = 'hchan-ias'
   }
   stages {
     stage('CI Build and push snapshot') {
