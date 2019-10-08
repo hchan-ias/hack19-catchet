@@ -39,26 +39,16 @@ readinessProbe:
   successThreshold: 1
   timeoutSeconds: 1
 env:
-  - name: DB_DRIVER
-    value: pgsql
-  - name: DB_HOST
-    value: catchet-db
-  - name: DB_PORT
-    value: 5432
-  - name: DB_DATABASE
-    value: postgres
-  - name: DB_USERNAME
-    value: postgres
-  - name: DB_PASSWORD
-    value: postgres
-  - name: DB_PREFIX
-    value: chq_
-  - name: APP_KEY
-    value: "${APP_KEY:-null}"
-  - name: APP_LOG
-    value: errorlog
-  - name: DEBUG
-    value: false
+   DBDRIVER: pgsql
+   DB_HOST: catchet-db
+   DB_PORT: 5432
+   DB_DATABASE: postgres
+   DB_USERNAME: postgres
+   DB_PASSWORD: postgres
+   DB_PREFIX: chq_
+   APP_KEY: "${APP_KEY:-null}"
+   APP_LOG: errorlog
+   DEBUG: false
 
 catchet-db:
   postgresqlUsername: postgres
