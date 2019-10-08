@@ -1,0 +1,5 @@
+dependencies:
+- alias: catchet-db
+  name: postgresql
+  repository: https://kubernetes-charts.storage.googleapis.com
+  version: 6.3.12
